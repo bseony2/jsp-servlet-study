@@ -8,4 +8,10 @@
         from emp
         order by empno desc
     </select>
+
+    <update id="memberAdd" parameterType="EmpDTO">
+        insert into emp(empno, ename, job, mgr, hiredate, sal, comm, deptno)
+        values (#{empno}, #{ename}, #{job}, #{mgr}, sysdate, #{sal}, null, null)
+    </update>
+
 </mapper>

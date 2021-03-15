@@ -3,11 +3,6 @@ package com.dao;
 import com.dto.EmpDTO;
 import org.apache.ibatis.session.SqlSession;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class EmpDAO {
@@ -18,13 +13,10 @@ public class EmpDAO {
         return list;
     }
 
-
-
-
-
-
-
-
+    public int memberAdd(SqlSession session, EmpDTO dto) {
+        int num = session.update("com.dto.memberAdd", dto);
+        return num;
+    }
 
 
 //    public ArrayList<EmpDTO> selectAllEmp(Connection con){

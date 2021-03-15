@@ -5,29 +5,13 @@ import com.dao.EmpDAO;
 import com.dto.EmpDTO;
 import org.apache.ibatis.session.SqlSession;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-import static java.sql.DriverManager.getConnection;
-
 public class EmpService {
-
-    String driver = "oracle.jdbc.driver.OracleDriver";
-    String url = "jdbc:oracle:thin:@localhost:1521:xe";
-    String userid = "scott";
-    String passwd = "tiger";
     EmpDAO dao;
 
     public EmpService(){
         dao = new EmpDAO();
-        try {
-            Class.forName(driver);
-            System.out.println("service 드라이버 로딩성공");
-        }catch (ClassNotFoundException throwables){
-            throwables.printStackTrace();
-        }
     }
 
     public List<EmpDTO> select(){
@@ -41,25 +25,17 @@ public class EmpService {
         return list;
     }
 
+    public int memberAdd(EmpDTO dto){
+        SqlSession session = MySqlSessionFactory.getSession();
+        int num=0;
+        try {
+            num = dao.memberAdd(session, dto);
+            session.commit();
+        }finally {
+            session.close();
+        }
+        return num;
 
+    }
 
-
-
-//    public ArrayList<EmpDTO> selectAllEmp(){
-//        ArrayList<EmpDTO> list = null;
-//        Connection con = null;
-//        try {
-//            con = getConnection(url, userid, passwd);
-//            list = dao.selectAllEmp(con);
-//        }catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//        }finally {
-//            try {
-//                if(con!=null) con.close();
-//            }catch (SQLException e2){
-//                e2.printStackTrace();
-//            }
-//        }
-//        return list;
-//    }
 }

@@ -10,17 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/EmpListServlet")
 public class EmpListServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 
         EmpService service = new EmpService();
         List<EmpDTO> list = service.select();
@@ -49,8 +44,12 @@ public class EmpListServlet extends HttpServlet {
         }
         my += "</table>";
         out.print(my);
+        out.print(("<a href=\"member.html\">회원가입</a>"));
         out.print("</body></html>");
-        System.out.println("done!!!!!!!!!!!!!!!!!!!");
+
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

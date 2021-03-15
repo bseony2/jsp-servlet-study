@@ -1,5 +1,7 @@
 package com.dto;
 
+import java.util.Date;
+
 public class EmpDTO {
 
     private int empno;
@@ -22,6 +24,19 @@ public class EmpDTO {
         this.sal = sal;
         this.comm = comm;
         this.deptno = deptno;
+    }
+    @Override
+    public String toString() {
+        return "EmpDTO{" +
+                "empno=" + empno +
+                ", ename='" + ename + '\'' +
+                ", job='" + job + '\'' +
+                ", mgr=" + mgr +
+                ", hiredate='" + hiredate + '\'' +
+                ", sal=" + sal +
+                ", comm=" + comm +
+                ", deptno=" + deptno +
+                '}';
     }
     public int getEmpno() {
         return empno;
@@ -71,4 +86,6 @@ public class EmpDTO {
     public void setDeptno(int deptno) {
         this.deptno = deptno;
     }
+
+
 }
