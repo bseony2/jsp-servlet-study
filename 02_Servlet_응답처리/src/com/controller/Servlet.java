@@ -17,7 +17,7 @@ public class Servlet extends HttpServlet {
         //응답처리 step 2. response에서 문자열을 보낼 수 있는 PrintWrite 객체 획득
         PrintWriter out = response.getWriter();
         //응답처리 step 3. printWriter out.print함수 사용 html문서를 만들어 주기
-        out.print("<html><body>")
+        out.print("<html><body>");
         out.print("<h1>서블릿 응답처리 실습</h1>");
         out.print("<p>Hello World</p>");
         out.print("<b/body></html>");

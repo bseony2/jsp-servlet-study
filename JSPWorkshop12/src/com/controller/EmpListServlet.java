@@ -1,5 +1,5 @@
-@javax.servlet.annotation.WebServlet(name = "loginServlet")
-public class loginServlet extends javax.servlet.http.HttpServlet {
+@javax.servlet.annotation.WebServlet(name = "EmpListServlet")
+public class EmpListServlet extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
 
     }
