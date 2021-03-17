@@ -6,6 +6,21 @@ public class MemberDTO {
     private int age;
     private String address;
 
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "username='" + username + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
+    public MemberDTO(String username, int age, String address){
+        this.username = username;
+        this.age = age;
+        this.address = address;
+    }
+
     public String getUsername() {
         return username;
     }

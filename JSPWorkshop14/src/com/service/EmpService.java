@@ -5,12 +5,7 @@ import com.dao.EmpDAO;
 import com.dto.EmpDTO;
 import org.apache.ibatis.session.SqlSession;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
-
-import static java.sql.DriverManager.getConnection;
 
 public class EmpService {
 
