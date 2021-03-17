@@ -19,7 +19,6 @@ application: <%= application.getAttribute("application") %><br>
 1>> <%= mesg %>
 2>> <%=mesg2 %>
 3>> <%=mesg3 %>
-hello~~~~~~~~~~~~~~~~~~~~~~~
 
 </body>
 </html>

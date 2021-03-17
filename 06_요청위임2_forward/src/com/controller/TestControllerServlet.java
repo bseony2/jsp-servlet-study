@@ -18,9 +18,12 @@ public class TestControllerServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("TestController.doGet");
+
         request.setAttribute("request", "홍길동");
+
         HttpSession session = request.getSession();
         session.setAttribute("session", "이순신");
+
         ServletContext ctx = getServletContext();
         ctx.setAttribute("application", "유관순");
 
