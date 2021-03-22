@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>LoginForm</title>
 </head>
 <body>
-$END$
+<h1>로그인폼</h1>
+<form action="LoginServlet" method="get"><!-- action="servlet의 매핑 주소 / 빼고 -->
+    <!--    전송방식 method=get방식    -->
+    아이디:<input type="text" name="userid" id="userid"><br> <!--    전송방식 method=get방식    -->
+    비밀번호:<input type="text" name="passwd" id="passwd"><br>
+    <input type="submit" value="로그인">
+</form>
 </body>
 </html>

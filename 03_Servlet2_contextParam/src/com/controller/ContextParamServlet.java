@@ -1,5 +1,6 @@
-package controller;
+package com.controller;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +15,10 @@ public class ContextParamServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        System.out.println("ContextParamServlet.doget");
+        ServletContext ctx = getServletContext();
+        String userid = ctx.getInitParameter("userid");
+        String email = ctx.getInitParameter("email");
+        System.out.println(userid + "\t" + email);
     }
 }
