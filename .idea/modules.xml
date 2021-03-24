@@ -20,6 +20,9 @@
       <module fileurl="file://$PROJECT_DIR$/07_JSP2_include2_action/07_JSP2_include2_action.iml" filepath="$PROJECT_DIR$/07_JSP2_include2_action/07_JSP2_include2_action.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_JSP3_scriptlet_expression_implicit/07_JSP3_scriptlet_expression_implicit.iml" filepath="$PROJECT_DIR$/07_JSP3_scriptlet_expression_implicit/07_JSP3_scriptlet_expression_implicit.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_JSP4_1_OUT/07_JSP4_1_OUT.iml" filepath="$PROJECT_DIR$/07_JSP4_1_OUT/07_JSP4_1_OUT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_세션처리1_session/08_세션처리1_session.iml" filepath="$PROJECT_DIR$/08_세션처리1_session/08_세션처리1_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_세션처리2_로그인/08_세션처리2_로그인.iml" filepath="$PROJECT_DIR$/08_세션처리2_로그인/08_세션처리2_로그인.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_세션처리3_Cookie/08_세션처리3_COOkie.iml" filepath="$PROJECT_DIR$/08_세션처리3_Cookie/08_세션처리3_COOkie.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSPWorkshop01/JSPWorkshop01.iml" filepath="$PROJECT_DIR$/JSPWorkshop01/JSPWorkshop01.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSPWorkshop06/JSPWorkshop06.iml" filepath="$PROJECT_DIR$/JSPWorkshop06/JSPWorkshop06.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSPWorkshop07/JSPWorkshop07.iml" filepath="$PROJECT_DIR$/JSPWorkshop07/JSPWorkshop07.iml" />
